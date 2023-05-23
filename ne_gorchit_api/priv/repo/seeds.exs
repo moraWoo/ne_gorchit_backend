@@ -17,6 +17,3 @@ NeGorchitApi.Repo.insert!(%NeGorchitApi.Restaurant.Post{title: "My first post", 
 NeGorchitApi.Repo.insert!(%NeGorchitApi.Restaurant.Post{title: "My first post", body: "It works!"})
 
 NeGorchitApi.Repo.insert!(%NeGorchitApi.Restaurant.Post{title: "My first post", body: "It works!"})
-
-# Repo.insert!(%Post{title: "My first post", body: "It works!"})
-# Repo.insert!(%Post{title: "My second post", body: "It really does work."})
