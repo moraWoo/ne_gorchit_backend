@@ -21,9 +21,14 @@ defmodule NeGorchitBackendWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", NeGorchitBackendWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", NeGorchitBackendWeb do
+    pipe_through :api
+    resources "/food_menu", MenuController, exept: [:new, :edit]
+    # get "/food_menu", MenuController, :index
+    # put "/food_menu", MenuController, :edit
+    # post "/food_menu", MenuController, :create
+    # delete "/food_menu", MenuController, :delete
+  end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
   if Application.compile_env(:ne_gorchit_backend, :dev_routes) do
